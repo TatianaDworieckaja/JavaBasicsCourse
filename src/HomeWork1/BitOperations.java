@@ -1,9 +1,9 @@
+//1. Побитовые операции:
 package HomeWork1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class HomeWork1 {
+public class BitOperations {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,11 @@ public class HomeWork1 {
         System.out.println("The result of 'AND' operation is:" + andOperationResult);
         System.out.println("The result of 'OR' operation is:" + orOperationResult);
 
-
+        /*Homework 1.4
+        float a = 42.5F;
+        float b = 2.0F;
+        float andOperationResultFloat = a & b;*/
+       // Operator & cannot be applied to float; побитовые операторы применимы только к целочисленным значениям.
 
         //To check myself:
         //System.out.println(Integer.toBinaryString(num1));
@@ -33,11 +37,7 @@ public class HomeWork1 {
 
 
 
-        //Homework 1.4
-        //float a = 42.5F;
-        //float b = 2.0F;
-        //float andOperationResultFloat = a & b;
-        //Operator & cannot be applied to float; побитовые операторы применимы только к целочисленным значениям.
+
 
 
     }
