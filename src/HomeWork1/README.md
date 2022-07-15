@@ -18,6 +18,7 @@
 
 4.6 Определить високосный год или нет - класс TypeOfYear
 
+5. Создать СТАТИЧЕСКИЙ метод sleepIn - класс SleepInMethod
 6.1 при помощи if - класс NameIf
 
 6.2 при помощи if else if - класс NameIfElse
