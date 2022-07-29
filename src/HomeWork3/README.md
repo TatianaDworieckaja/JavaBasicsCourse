@@ -1,0 +1,39 @@
+1 runners.WithoutCalculatorMain
+
+2 calcs.simple.CalculatorWithOperator
+
+runners.CalculatorWithOperatorMain
+
+3 calcs.simple.CalculatorWithMathCopy
+
+runners.CalculatorWithMathCopyMain
+
+4 calcs.simple.CalculatorWithMathExtends
+
+runners.CalculatorWithMathExtendsMain
+
+5 calcs.additional.CalculatorWithCounterClassic
+
+runners.CalculatorWithCounterClassicMain
+
+6 calcs.additional.CalculatorWithCounterAutoSuper
+
+runners.CalculatorWithCounterAutoSuperMain
+
+7 calcs.additional.CalculatorWithCounterAutoComposite
+
+runners.CalculatorWithCounterDelegateCompositeMain
+
+8 calcs.additional.CalculatorWithCounterAutoAgregation
+
+runners.CalculatorWithCounterDelegateAgregationMain
+
+9 calcs.additional.CalculatorWithCounterAutoChoiceAgregation
+
+runners.CalculatorWithCounterDelegateChoiceAgregationMain
+
+10 calcs.api.ICalculator
+
+11 calcs.additional.CalculatorWithCounterAutoAgregationInterface
+
+runners.CalculatorWithCounterAutoCompositeInterfaceMain
