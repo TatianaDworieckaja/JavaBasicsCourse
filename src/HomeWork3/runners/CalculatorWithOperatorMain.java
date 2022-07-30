@@ -4,7 +4,7 @@ package HomeWork3.runners;
 
 import HomeWork3.calcs.simple.CalculatorWithOperator;
 
-//class with method containing object of CalculatorWithOperator class, which is usedto calculate
+//class with method containing object of CalculatorWithOperator class, which is used to calculate
 // simple math operation 4.1 + 15 * 7 + (28/5) * (28/5).
 public class CalculatorWithOperatorMain {
 

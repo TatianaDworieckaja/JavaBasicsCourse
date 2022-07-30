@@ -8,26 +8,22 @@ public class CalculatorWithOperator implements ICalculator {
 
 
     public double division(double x, double y) {
-        double z = x / y;
-        return z;
+        return x / y;
     }
 
 
     public double multiplication(double x, double y) {
-        double z = x * y;
-        return z;
+        return x * y;
     }
 
 
     public double subtraction(double x, double y) {
-        double z = x - y;
-        return z;
+        return x - y;
     }
 
 
     public double adding(double x, double y) {
-        double z = x + y;
-        return z;
+        return x + y;
     }
 
     /*The method of exponentiation of a positive fractional number*/
@@ -46,8 +42,6 @@ public class CalculatorWithOperator implements ICalculator {
     public double modulus (double x){
         if (x < 0){
             x = -x;
-        }else{
-            x = x;
         }
         return x;
     }

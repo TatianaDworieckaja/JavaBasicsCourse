@@ -4,7 +4,7 @@ public class CalculatorWithCounterAutoComposite {
 
 
 
-    CalculatorWithCounterAutoSuper newCalc = new CalculatorWithCounterAutoSuper();
+    private final CalculatorWithCounterAutoSuper newCalc = new CalculatorWithCounterAutoSuper();
 
 
     public double raiseToPower (double x, double y) {
@@ -37,7 +37,7 @@ public class CalculatorWithCounterAutoComposite {
     }
 
 
-    public double substraction(double x, double y) {
+    public double subtraction(double x, double y) {
         return newCalc.subtraction(x, y);
     }
 

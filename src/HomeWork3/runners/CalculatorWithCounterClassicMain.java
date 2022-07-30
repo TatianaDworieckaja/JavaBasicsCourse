@@ -20,8 +20,7 @@ public class CalculatorWithCounterClassicMain {
     calc.incrementCountOperation();
     double d = calc.adding(4.1, (b+c));
     calc.incrementCountOperation();
-    double result = d;
-    System.out.println(result);
+    System.out.println(d);
     System.out.println(calc.getCountOperation());
 
 

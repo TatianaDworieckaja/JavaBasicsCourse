@@ -13,9 +13,9 @@ public class CalculatorWithCounterAutoChoiceAgregation {
     return count;
 }
 
-    CalculatorWithOperator calculator1;
-    CalculatorWithMathCopy calculator2;
-    CalculatorWithMathExtends calculator3;
+    private CalculatorWithOperator calculator1;
+    private CalculatorWithMathCopy calculator2;
+    private CalculatorWithMathExtends calculator3;
 
 
     public CalculatorWithCounterAutoChoiceAgregation (CalculatorWithOperator calcOfThisType){
