@@ -13,9 +13,9 @@ public class CalculatorWithCounterAutoCompositeInterfaceMain {
         ICalculator calc = new CalculatorWithOperator();
         CalculatorWithCounterAutoAgregationInterface calculatorMain = new CalculatorWithCounterAutoAgregationInterface(calc);
 
-        double a = calculatorMain.division(28.0, 5);
-        double b = calculatorMain.multiplication(15, 7);
-        double c = calculatorMain.raiseToPower(a, 2);
+        double a = calculatorMain.division(28, 5);
+        double b = calculatorMain.raiseToPower(a, 2);
+        double c = calculatorMain.multiplication(15, 7);
         double result = calculatorMain.adding(4.1, (b+c));
 
         System.out.println(result);

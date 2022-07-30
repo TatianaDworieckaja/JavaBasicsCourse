@@ -14,7 +14,7 @@ public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
     }
 
     @Override
-    public double raiseToPower(double x, double y) {
+    public double raiseToPower(double x, int y) {
         callCounter++;
         return super.raiseToPower(x, y);
     }

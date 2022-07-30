@@ -13,8 +13,8 @@ public class CalculatorWithOperatorMain {
         CalculatorWithOperator calc = new CalculatorWithOperator();
 
         double a =  calc.division(28, 5);
-        double b = calc.multiplication(15, 7);
-        double c = calc.raiseToPower(a, 2);
+        double b = calc.raiseToPower(a, 2);
+        double c = calc.multiplication(15, 7);
         double result = calc.adding(4.1, (b+c));
         System.out.println(result);
 

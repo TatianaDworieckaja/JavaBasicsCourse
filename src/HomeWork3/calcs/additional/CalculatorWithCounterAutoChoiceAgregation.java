@@ -77,7 +77,7 @@ public class CalculatorWithCounterAutoChoiceAgregation {
         }
     }
 
-    public double raiseToPower (double x, double y){
+    public double raiseToPower (double x, int y){
         count++;
         if (calculator1 != null){
             return calculator1.raiseToPower (x, y);

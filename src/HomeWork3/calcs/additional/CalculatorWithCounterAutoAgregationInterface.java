@@ -35,7 +35,7 @@ public class CalculatorWithCounterAutoAgregationInterface {
         return calculator.adding(x, y);
     }
 
-    public double raiseToPower (double x, double y){
+    public double raiseToPower (double x, int y){
         count++;
         return calculator.raiseToPower(x, y);
     }

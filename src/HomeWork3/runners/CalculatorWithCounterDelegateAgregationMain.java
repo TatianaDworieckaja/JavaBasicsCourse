@@ -12,9 +12,9 @@ public class CalculatorWithCounterDelegateAgregationMain {
 
         CalculatorWithCounterAutoAgregation newCalcMain = new CalculatorWithCounterAutoAgregation(mathCopyCalc);//creation of object of CalculatorWithCounterAutoAgregation class
 
-        double division = newCalcMain.division(28.0, 5);
+        double division = newCalcMain.division(28, 5);
+        double pow = newCalcMain.raiseToPower(division, 2);
         double multiplication = newCalcMain.multiplication(15, 7);
-        double pow = newCalcMain.exponent(division, 2);
         double addition = newCalcMain.addition(4.1, multiplication );
         double result = newCalcMain.addition(addition, pow);
 

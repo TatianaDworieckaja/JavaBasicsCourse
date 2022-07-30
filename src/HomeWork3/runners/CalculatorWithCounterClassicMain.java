@@ -12,11 +12,11 @@ public class CalculatorWithCounterClassicMain {
 
     CalculatorWithCounterClassic calc = new CalculatorWithCounterClassic();//new object of CalculatorWithCounterClassic is created
 
-    double a = calc.division(28.0, 5);
+    double a = calc.division(28, 5);
     calc.incrementCountOperation();
-    double b = calc.multiplication(15.0, 7.0);
+    double b = calc.raiseToPower(a, 2);
     calc.incrementCountOperation();
-    double c = calc.raiseToPower(a, 2);
+    double c = calc.multiplication(15, 7);
     calc.incrementCountOperation();
     double d = calc.adding(4.1, (b+c));
     calc.incrementCountOperation();

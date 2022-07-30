@@ -9,12 +9,12 @@ public class CalculatorWithCounterDelegateCompositeMain {
     public static void main(String[] args) {
         CalculatorWithCounterAutoComposite calculator = new CalculatorWithCounterAutoComposite();
 
-        double a = calculator.division(28.0, 5);
-        double b = calculator.multiplication(15, 7);
-        double c = calculator.raiseToPower(a, 2);
-        double e = calculator.addition(4.1, b + c);
+        double a = calculator.division(28, 5);
+        double b = calculator.raiseToPower(a, 2);
+        double c = calculator.multiplication(15, 7);
+        double d = calculator.addition(4.1, b + c);
 
-        System.out.println(e);
+        System.out.println(d);
         System.out.println("number of calculator calls is: " + calculator.getCountOperation());
 
     }

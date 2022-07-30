@@ -7,7 +7,7 @@ public class CalculatorWithCounterAutoComposite {
     private final CalculatorWithCounterAutoSuper newCalc = new CalculatorWithCounterAutoSuper();
 
 
-    public double raiseToPower (double x, double y) {
+    public double raiseToPower (double x, int y) {
         return newCalc.raiseToPower(x, y);
     }
 

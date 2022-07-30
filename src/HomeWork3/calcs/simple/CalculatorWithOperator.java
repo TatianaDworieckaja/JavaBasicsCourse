@@ -28,7 +28,7 @@ public class CalculatorWithOperator implements ICalculator {
 
     /*The method of exponentiation of a positive fractional number*/
 
-    public double raiseToPower(double value, double power) {
+    public double raiseToPower(double value, int power) {
         double result = 1;
         for (int i = 1; i <= power; i++) {
             result = result * value;

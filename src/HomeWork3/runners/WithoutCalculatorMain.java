@@ -8,8 +8,8 @@ public class WithoutCalculatorMain {
     public static void main(String[] args) {
 
         double a  = 28.0 / 5;
-        double b = 15 * 7;
         double c = a * a;
+        double b = 15 * 7;
         double result = 4.1 + b + c;
 
         System.out.println(result);//140.45999999999998

@@ -30,7 +30,7 @@ public class CalculatorWithMathCopy implements ICalculator {
 
     //methods of Math library
     /*method used to calculate number (x) raised to power (y) */
-    public double raiseToPower (double x, double y){
+    public double raiseToPower (double x, int y){
         return Math.pow(x, y);
 }
     /*method used to calculate modulus of a number (x) */

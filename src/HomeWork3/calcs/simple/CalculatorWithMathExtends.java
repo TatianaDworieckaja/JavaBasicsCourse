@@ -9,7 +9,7 @@ public class CalculatorWithMathExtends extends CalculatorWithOperator implements
 
     //переоределение метода raiseToPower из класса CalculatorWithOperator, возводящего число в степень с пом. библиотеки Math
     @Override
-    public double raiseToPower(double x, double y) {
+    public double raiseToPower(double x, int y) {
         return Math.pow(x, y);
     }
 

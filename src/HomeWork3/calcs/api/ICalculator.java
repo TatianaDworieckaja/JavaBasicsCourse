@@ -7,7 +7,7 @@ public interface ICalculator {
     double subtraction(double x, double y);
     double adding (double x, double y);
 
-    double raiseToPower (double x, double y);
+    double raiseToPower (double x, int y);
     double modulus(double x);
     double squareRoot(double x);
 

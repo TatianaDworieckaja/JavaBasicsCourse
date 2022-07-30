@@ -54,7 +54,7 @@ public class CalculatorWithCounterAutoAgregation {
 
     /*The method of exponentiation of a positive fractional number*/
 
-    public double exponent(double value, double power) {
+    public double raiseToPower(double value, int power) {
         incrementCountOperation();
         return newCalc.raiseToPower(value, power);
     }
