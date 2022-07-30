@@ -4,7 +4,7 @@ import HomeWork3.calcs.simple.CalculatorWithMathCopy;
 
 public class CalculatorWithCounterAutoAgregation {
 
-    CalculatorWithMathCopy newCalc;//создание поля типа CalculatorWithMathCopy
+    private final CalculatorWithMathCopy newCalc;//создание поля типа CalculatorWithMathCopy
 
 
     public CalculatorWithCounterAutoAgregation(CalculatorWithMathCopy newCalc){
@@ -13,7 +13,7 @@ public class CalculatorWithCounterAutoAgregation {
     }
 
     //счётчик вызовов калькулятора
-    long count = 0;
+    private long count = 0;
 
     public void incrementCountOperation() {
         count++;
