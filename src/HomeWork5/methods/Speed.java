@@ -11,8 +11,7 @@ public class Speed {
         Iterator<T> itr = collection.iterator();
         long start = System.currentTimeMillis();
         while(itr.hasNext()){
-            T element = itr.next();
-            System.out.println("we have got " + element);
+            itr.next();
         }
         long stop = System.currentTimeMillis();
         System.out.println("The collection was iterated with Iterator in  " + (stop - start) + " ms");
@@ -23,8 +22,9 @@ public class Speed {
      */
     public static <T> void speedWhenForI(Collection<T> collection){
         long start = System.currentTimeMillis();
-        for (int i = 0; i < collection.size();){
-            i++;
+        List<T> list = new ArrayList<>(collection);
+        for (int i = 0; i < collection.size();i++){
+            T item = list.get(i);
         }
         long stop = System.currentTimeMillis();
         System.out.println("The collection was iterated with for i method in  " + (stop - start) + " ms");
