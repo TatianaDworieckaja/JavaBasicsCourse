@@ -1,10 +1,9 @@
 package HomeWork5.dto;
 
-import java.util.Objects;
 
-public class Animal implements Comparable {
-    private int age;// 1-15
-    private String name; //pet name
+public class Animal {
+    final private int age;
+    final private String name;
 
     public Animal(String name, int age){
         this.name = name;
@@ -20,18 +19,4 @@ public class Animal implements Comparable {
     }
 
 
-
-    @Override
-    public String toString() {
-        return "Animal{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
-    // needed to create and fill collection TreeSet
-    @Override
-    public int compareTo(Object o) { ////implementation is needed to create and fill collection TreeSet
-        return 0;
-    }
 }
