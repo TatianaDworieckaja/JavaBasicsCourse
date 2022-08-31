@@ -1,45 +1,52 @@
 package HomeWork3.calcs.additional;
 
+import HomeWork3.calcs.simple.CalculatorWithMathExtends;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorWithCounterAutoDecoratorTest {
 
-    @Test
-    void getCountOperation() {
+    private final CalculatorWithCounterAutoDecorator calculator = new CalculatorWithCounterAutoDecorator(new CalculatorWithMathExtends());
 
+    @Test
+    public void adding() {
+        Assertions.assertEquals(5, calculator.adding(2, 3));
     }
 
     @Test
-    void division() {
+    public void subtraction() {
+        Assertions.assertEquals(3, calculator.subtraction(7, 4));
     }
 
     @Test
-    void multiplication() {
+    public void multiplication() {
+        Assertions.assertEquals(8, calculator.multiplication(2, 4));
     }
 
     @Test
-    void subtraction() {
+    public void division() {
+        Assertions.assertEquals(3, calculator.division(9, 3));
     }
 
     @Test
-    void adding() {
+    public void exponentiation() {
+        Assertions.assertEquals(25, calculator.raiseToPower(5, 2));
     }
 
     @Test
-    void raiseToPower() {
+    public void numberModulus() {
+        Assertions.assertEquals(4, calculator.modulus(-4));
     }
 
     @Test
-    void modulus() {
+    public void squareRoot() {
+        Assertions.assertEquals(3, calculator.squareRoot(9));
     }
 
     @Test
-    void squareRoot() {
-    }
-
-    @Test
-    void getCalculator() {
+    public void testCalculator() {
+        Assertions.assertEquals(140.45999999999998, calculator.adding(calculator.multiplication(15, 7), calculator.adding(4.1, calculator.raiseToPower(calculator.division(28, 5), 2))));
     }
 }

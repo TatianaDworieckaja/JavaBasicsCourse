@@ -3,7 +3,7 @@ package HomeWork3.calcs.simple;
 
 import HomeWork3.calcs.api.ICalculator;
 
-//Class with four basic methods and three methods from Java Math library
+/** Class with four basic methods and three methods from Java Math library*/
 
 public class CalculatorWithMathCopy implements ICalculator {
 

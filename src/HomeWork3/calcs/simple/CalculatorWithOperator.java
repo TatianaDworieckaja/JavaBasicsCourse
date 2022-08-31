@@ -2,7 +2,7 @@
 package HomeWork3.calcs.simple;
 import HomeWork3.calcs.api.ICalculator;
 
-/* This is a class containing mathematical methods*/
+/** This is a class containing mathematical methods*/
 
 public class CalculatorWithOperator implements ICalculator {
 

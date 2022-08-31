@@ -4,7 +4,7 @@ import HomeWork3.calcs.simple.CalculatorWithMathCopy;
 import HomeWork3.calcs.simple.CalculatorWithMathExtends;
 import HomeWork3.calcs.simple.CalculatorWithOperator;
 
-//класс, тиеющий три варианта конструктора, принимающих три объекта разного типа.
+/** класс, тиеющий три варианта конструктора, принимающих три объекта разного типа.*/
 
 public class CalculatorWithCounterAutoChoiceAgregation {
     private long count = 0;

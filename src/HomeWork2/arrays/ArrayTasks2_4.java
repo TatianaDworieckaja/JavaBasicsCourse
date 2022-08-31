@@ -1,7 +1,5 @@
 package HomeWork2.arrays;
 
-import HomeWork2.utils.ArrayUtils;
-
 import java.util.Arrays;
 
 public class ArrayTasks2_4 {
@@ -52,22 +50,22 @@ public class ArrayTasks2_4 {
      */
     public static String task2_4_3(int[] array) {
         //int[] array = ArrayUtils.arrayRandom(50, 100);
-        String result = "";
+        StringBuilder result = new StringBuilder();
         int sum = 0;
-        int average = 0;
+        int average;
 
-        for (int i = 0; i < array.length; i++) {
-            sum = sum + array[i];
+        for (int j : array) {
+            sum = sum + j;
         }
 
         average = sum / array.length;
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < average) {
-                result = result + array[i] + " ";
+        for (int j : array) {
+            if (j < average) {
+                result.append(j).append(" ");
             }
         }
-        return result;
+        return result.toString();
     }
 
     /* This method finds the two elements with min value in array
@@ -110,9 +108,9 @@ public class ArrayTasks2_4 {
 
         int sum = 0;
 
-        for(int i=0; i<array.length; i++){
-            int element = array[i];
-            while (element >0) {
+        for (int j : array) {
+            int element = j;
+            while (element > 0) {
                 sum = sum + element % 10;
                 element = element / 10;
             }

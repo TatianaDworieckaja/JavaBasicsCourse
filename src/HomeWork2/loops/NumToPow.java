@@ -2,7 +2,7 @@ package HomeWork2.loops;
 
 public class NumToPow {
 
-    //create paw method for exponentiation operation
+/**create paw method for exponentiation operation*/
 
     public static double pow(double base, int powValue) {
         if (powValue==0){

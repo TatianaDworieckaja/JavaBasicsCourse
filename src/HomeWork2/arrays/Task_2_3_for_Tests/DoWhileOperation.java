@@ -7,7 +7,7 @@ public class DoWhileOperation implements IArraysOperation{
     @Override
     public String printAll(int[] array) {
         int i = 0;
-        int newArray[] = new int[array.length];
+        int[] newArray = new int[array.length];
         do {
             newArray[i] = array[i];
             i++;
@@ -21,7 +21,7 @@ public class DoWhileOperation implements IArraysOperation{
     public String printEverySecond(int[] array) {
         int i = 1;
         int j = 0;
-        int newArray[] = new int[array.length/2];
+        int[] newArray = new int[array.length/2];
         do {
             newArray[j] = array[i];
             i+=2;
@@ -35,7 +35,7 @@ public class DoWhileOperation implements IArraysOperation{
 
     @Override
     public String printReverse(int[] array) {
-        int newArray[] = new int[array.length];
+        int[] newArray = new int[array.length];
         int i = array.length-1;
         int j = 0;
         do {

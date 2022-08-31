@@ -21,10 +21,7 @@ class SleepInMethodTest {
     public void print2() {
         Assertions.assertEquals("Можешь спать!", SleepInMethod.print(true, true));
     }
-    @Test
-    public void print3() {
-        Assertions.assertEquals("Можешь спать!", SleepInMethod.print(true, true));
-    }
+
     @Test
     public void print4() {
         Assertions.assertEquals("Пора идти на работу", SleepInMethod.print(true, false));

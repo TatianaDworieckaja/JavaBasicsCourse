@@ -20,6 +20,6 @@ class TypeOfYearTest {
     //negative test type - Test failed.
     @Test
     public void typeOfYear3() {
-        Assertions.assertEquals("Этот год - високосный", TypeOfYear.typeOfYear(2022));
+        Assertions.assertEquals("Этот год - невисокосный", TypeOfYear.typeOfYear(2022));
     }
 }

@@ -1,5 +1,5 @@
 package HomeWork2.loops;
-/*Multiplies all the digits which @num consists of and
+/** Multiplies all the digits which @num consists of and
 @return result of multiplication */
 
 public class NumMultiply {

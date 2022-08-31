@@ -1,11 +1,8 @@
 package HomeWork2.loops;
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class NumMethods {
 
-    /*This is a method which return the max integer in provided  number.
+    /**This is a method which return the max integer in provided  number.
     @param n - number (e.g. provided by a user)
     @param m - the starting digit (last in the number) compared with k. Then the digit with max value is assigned to m.
     @param k - digit which is compared to max digit.
@@ -26,15 +23,15 @@ public class NumMethods {
         return m;
     }
 
-    /* This is a method which return a percentage of even numbers in random selection
+    /** This is a method which return a percentage of even numbers in random selection
     @param n - size of random selection
     @param array[] - array for saving numbers of even and odd random numbers in the selection. Array is needed to return two values
     */
 
-    public static float percentage(int array[]) {
-        int counter = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
+    public static float percentage(int[] array) {
+        float counter = 0;
+        for (int j : array) {
+            if (j % 2 == 0) {
                 counter = counter + 1;
             }
         }
@@ -43,7 +40,7 @@ public class NumMethods {
     }
 
 
-    /* This is method which counts even and odd integers in provided number
+    /** This is method which counts even and odd integers in provided number
      * @param num - this is a number (e.g. provided by user)
      * @return e and o - the number of even and odd integers respectively */
 
@@ -61,7 +58,7 @@ public class NumMethods {
         return "even: " + e + ", odd: " + o;
     }
 
-    /* This is a method which returns Fibonacci sequence
+    /** This is a method which returns Fibonacci sequence
     @param n - length of Fibonacci series
     @param prev - previous number in Fibonacci series
     @param next - the next number in Fibonacci series
@@ -91,7 +88,7 @@ public class NumMethods {
 
 
 
-    /* This is a method which returns series of numbers in specific range with specific step (provided by a user)
+    /** This is a method which returns series of numbers in specific range with specific step (provided by a user)
     @param start - number with which the range starts
     @param finish - number with which the range finishes
     @param step  - step or result of substraction of previous number from the next one in the range
@@ -109,18 +106,18 @@ public class NumMethods {
         return str.toString();
     }
 
-    /*The method which allows to reverse the number (321 instead of 123) and to print it out.
+    /** The method which allows to reverse the number (321 instead of 123) and to print it out.
     * @param num  - number provided by a user
     * @param num1 - number provided by the user and cut during the cycle
     * @param revnum - reversed number
     * */
     public static String numReverse(int num) {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         int x;
         while (num > 0) {
             x =  num % 10;
             num = num / 10;
-            str = str + x;
+            str.append(x);
         }
         return str.toString();
     }

@@ -2,7 +2,7 @@ package HomeWork2.utils;
 
 public class SortsUtils {
 
-    /*bubble method of sorting*/
+   /** bubble method of sorting */
 
     public static void bubble(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {

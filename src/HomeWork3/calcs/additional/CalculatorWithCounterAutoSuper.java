@@ -1,8 +1,9 @@
 package HomeWork3.calcs.additional;
 
 import HomeWork3.calcs.simple.CalculatorWithMathExtends;
-//Класс CalculatorWithCounterAutoSuper, наследующий CalculatorWithMathExtends,
-// который переопределяет все методы родительского класса CalculatorWithMathExtends
+/** Класс CalculatorWithCounterAutoSuper, наследующий CalculatorWithMathExtends,
+ * который переопределяет все методы родительского класса CalculatorWithMathExtends */
+
 // c добавлением счётчика вызовов и обращением к методам родительского класса с помощью клчевого слова super.
 //Класс описывает метод getCountOperation(), который возвращает количество использований данного калькулятора
 

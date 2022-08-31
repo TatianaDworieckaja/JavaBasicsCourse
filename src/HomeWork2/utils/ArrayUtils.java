@@ -4,7 +4,7 @@ package HomeWork2.utils;
 import java.util.Random;
 import java.util.Scanner;
 
-/* This is a method which allows user to provide a size and array elements
+/** This is a method which allows user to provide a size and array elements
 * @return array */
 public class ArrayUtils {
 
@@ -22,7 +22,7 @@ public class ArrayUtils {
 
     }
 
-    /*method which @return array contained random values
+    /** method which @return array contained random values
     @param size  - defined size of array
     @param maxValueExclusion - top boundary of random numbers range */
 
