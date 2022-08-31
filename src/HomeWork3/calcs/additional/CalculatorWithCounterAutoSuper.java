@@ -7,7 +7,8 @@ import HomeWork3.calcs.simple.CalculatorWithMathExtends;
 //Класс описывает метод getCountOperation(), который возвращает количество использований данного калькулятора
 
 public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
-    private int callCounter = 0;
+    private long callCounter;
+    private void incrementCountOperation(){callCounter++;}
 
     public long getCountOperation(){
        return callCounter;
@@ -15,43 +16,43 @@ public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
 
     @Override
     public double raiseToPower(double x, int y) {
-        callCounter++;
+        incrementCountOperation();
         return super.raiseToPower(x, y);
     }
 
     @Override
     public double squareRoot(double x) {
-        callCounter++;
+        incrementCountOperation();
         return super.squareRoot(x);
     }
 
     @Override
     public double modulus(double x) {
-        callCounter++;
+        incrementCountOperation();
         return super.modulus(x);
     }
 
     @Override
     public double adding(double x, double y) {
-        callCounter++;
+        incrementCountOperation();
         return super.adding(x, y);
     }
 
     @Override
     public double division(double x, double y) {
-        callCounter++;
+        incrementCountOperation();
         return super.division(x, y);
     }
 
     @Override
     public double multiplication(double x, double y) {
-        callCounter++;
+        incrementCountOperation();
         return super.multiplication(x, y);
     }
 
     @Override
     public double subtraction(double x, double y) {
-        callCounter++;
+        incrementCountOperation();
         return super.subtraction(x, y);
     }
 

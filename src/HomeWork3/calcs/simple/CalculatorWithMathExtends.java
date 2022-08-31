@@ -5,7 +5,7 @@ package HomeWork3.calcs.simple;
 
 import HomeWork3.calcs.api.ICalculator;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator {
+public class CalculatorWithMathExtends extends CalculatorWithOperator  implements ICalculator {
 
     //переоределение метода raiseToPower из класса CalculatorWithOperator, возводящего число в степень с пом. библиотеки Math
     @Override

@@ -7,7 +7,7 @@ import HomeWork3.calcs.simple.CalculatorWithMathExtends;
 
 public class CalculatorWithCounterClassic extends CalculatorWithMathExtends
 {
-    private int count = 0;
+    private int count;
     public void incrementCountOperation() {
         count++;
     }

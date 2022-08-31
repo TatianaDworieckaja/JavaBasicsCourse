@@ -15,13 +15,13 @@ public class ArrayTasks2_4 {
         //int[]container =  task2_4_5();
        // System.out.println("After: " + Arrays.toString(container));
         //System.out.println();
-        System.out.println(task2_4_6());
+     //   System.out.println(task2_4_6());
     }
 
     /* This method summarizes even and positive elements of an array
      */
-    public static int task2_4_1() {
-        int[] array = ArrayUtils.arrayRandom(50, 100);
+    public static int task2_4_1(int[]array) {
+       //int[] array = ArrayUtils.arrayRandom(50, 100);
         int result = 0;
         for (int element : array) {
             if (element % 2 == 0 && element > 0) {
@@ -33,10 +33,10 @@ public class ArrayTasks2_4 {
 
     /* This method finds the maximum value of element among those which indexes are even.
      */
-    public static int task2_4_2() {
-        int[] array = ArrayUtils.arrayRandom(50, 100);
-        int max = array[2];
-        int i = max + 2;
+    public static int task2_4_2(int[]array) {
+        //int[] array = ArrayUtils.arrayRandom(50, 100);
+        int max = array[0];
+        int i = 2;
 
         while (i < array.length) {
             if (array[i] > max) {
@@ -50,8 +50,8 @@ public class ArrayTasks2_4 {
 
     /* This method finds the elements in array which values are less than average
      */
-    public static String task2_4_3() {
-        int[] array = ArrayUtils.arrayRandom(50, 100);
+    public static String task2_4_3(int[] array) {
+        //int[] array = ArrayUtils.arrayRandom(50, 100);
         String result = "";
         int sum = 0;
         int average = 0;
@@ -72,11 +72,10 @@ public class ArrayTasks2_4 {
 
     /* This method finds the two elements with min value in array
      */
-    public static int[] task2_4_4() {
-        int[] array = ArrayUtils.arrayRandom(50, 100);
+    public static int[] task2_4_4(int[] array) {
+        //int[] array = ArrayUtils.arrayRandom(50, 100);
         int min1 = Integer.MAX_VALUE;
         int min2 = Integer.MAX_VALUE - 1;
-        ;
         for (int element : array) {
             if (element < min1) {
                 min1 = element;
@@ -88,35 +87,27 @@ public class ArrayTasks2_4 {
 
     //	This is a method which cleanses your array from element inside the defined range.
 
-    public static int[] task2_4_5() {
-        int[] array = ArrayUtils.arrayRandom(50, 100);
-        System.out.println("Before cleansing: " + Arrays.toString(array));
-
-        int border1 = 69;
-        int border2 = 88;
-        int N = array.length;
-        int n = N;
-
-        for (int i = 0; i < n; i++) {
-            if (array[i] >= border1 && array[i] <= border2) {
-                n--;
-               for (int j=i; j<n; j++) {
-
-                   array[j] = array[j + 1];
-               }
+    public static String task2_4_5(int[] array, int min, int max) {
+        //int[] array = ArrayUtils.arrayRandom(50, 100);
+       // System.out.println("Before cleansing: " + Arrays.toString(array));
+            int count = 0;
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] >= min && array[i] <= max) {
+                    count++;
+                    if (array.length - 1 - i >= 0) System.arraycopy(array, i + 1, array, i, array.length - 1 - i);
+                    array[array.length - count] = 0;
+                    i--;
+                }
             }
-        }
-        for (int i=n; i<N; i++){
-                array[i] = 0;
-            }
-        return array;
-        }
+            int[] result = new int[array.length - count];
+            System.arraycopy(array, 0, result, 0, result.length);
+            return Arrays.toString(result);
+    }
 
     //This method summarizes all digits inside the array
 
-    public static int task2_4_6(){
-        int[] array = ArrayUtils.arrayRandom(50, 100);
-        System.out.println("Your array is: " + Arrays.toString(array));
+    public static int task2_4_6(int[] array){
+
         int sum = 0;
 
         for(int i=0; i<array.length; i++){
@@ -129,7 +120,7 @@ public class ArrayTasks2_4 {
         return sum;
     }
 
-    }
+}
 
 
     

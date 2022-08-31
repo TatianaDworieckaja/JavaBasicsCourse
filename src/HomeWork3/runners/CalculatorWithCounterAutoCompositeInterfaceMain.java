@@ -1,6 +1,7 @@
 package HomeWork3.runners;
 
 import HomeWork3.calcs.api.ICalculator;
+import HomeWork3.calcs.simple.CalculatorWithMathCopy;
 import HomeWork3.calcs.simple.CalculatorWithOperator;
 import HomeWork3.calcs.additional.CalculatorWithCounterAutoAgregationInterface;
 
@@ -10,7 +11,7 @@ public class CalculatorWithCounterAutoCompositeInterfaceMain {
 
     public static void main(String[] args) {
 
-        ICalculator calc = new CalculatorWithOperator();
+        ICalculator calc = new CalculatorWithMathCopy();
         CalculatorWithCounterAutoAgregationInterface calculatorMain = new CalculatorWithCounterAutoAgregationInterface(calc);
 
         double a = calculatorMain.division(28, 5);
